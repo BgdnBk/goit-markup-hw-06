@@ -62,16 +62,16 @@
     <div class="hero-img ">  
       <h1 class="section-title">эффективные решения<br>
          для вашего бизнеса</h1>     
-    <a data-modal-open href="" class="link hero-link">Заказать услугу</a>
+    <button data-modal-open href="" class="link hero-link">Заказать услугу</button>
     <!-- модальное окно -->
       <div  data-modal class="backdrop is-hidden" >
         <div class="modal" >
           <b class="modal-name">Оставьте свои данные, мы вам перезвоним</b>
-            <a class="modal-close" data-modal-close href="" aria-label="закрыть модальное окно">
+            <button class="modal-close" data-modal-close href="" aria-label="закрыть модальное окно">
               <svg class="icon">
                 <use href="./images/sprite.svg#icon-Close"></use>
               </svg>
-            </a>
+            </button>
           <form class="form">
             <label class="form-field">
               <input type="text" id="name" name="name" required class="form-input" placeholder=" "> 
@@ -105,18 +105,18 @@
             </label>
             
             <label class="form-field">
-              <span for="coment" class="form-label">Комментарий</span>
+              <span for="coment" class="form-coment">Комментарий</span>
               <textarea class="coment" name="coment" id="coment" cols="30" rows="10" placeholder=" "></textarea>
             </label>
 
-            <label class="form-field">
-              <input type="checkbox" id="accept" name="accept">
-              <span for="accept">
-                Соглашаюсь с рассылкой и принимаю 
-                <a href="">Условия договора</a>
-              </span>
-            </label>
-
+            <div class="form-field">
+              <label class="form-checkbox">
+                <input type="checkbox" name="accept" class="custom-check">
+                  <span  class="checkbox-label">Соглашаюсь с рассылкой и принимаю &nbsp <a href="" class="form-accept"> Условия договора</a>             
+                  </span>
+              </label>             
+            </div>
+            
             <button type="submit" class="submit">
               <span class="send">Отправить</span>
             </button>
@@ -424,7 +424,7 @@
           <ul class="address-list">
             <li class="item"> 
               <a href="index.html" class="link-logo"><span class="logo">Web </span>
-                <span class="logo-studio"> Studio</span>
+                <span class="logo-studio">&nbsp Studio</span>
               </a>
             </li>
             <li class="item text">
