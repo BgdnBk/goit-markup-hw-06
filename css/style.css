@@ -1193,10 +1193,10 @@ color: var(--text-color);
   z-index: 4;
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
+} */
 
 .modal{
   position: absolute;
@@ -1213,8 +1213,24 @@ color: var(--text-color);
 
   background-color: var(--primary-text-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px; 
-  
+  border-radius: 4px;   
+}
+
+.modal-close  {
+  position: absolute;
+  top: 1%;
+  right: 5px;
+  transform: translate(-50% -50%);
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal-close .icon {   
+  width: 50%; 
+  height: 100%;
 }
 
 .modal-name {
@@ -1245,15 +1261,21 @@ textarea {
   top: 50%;
   left: 42px;
   transform: translateY(-50%);
-  margin-bottom: 4px;    
-  transition: color var(--timing) var(--duration);
-}
+  /* margin-bottom: 4px;     */
+  transition: color var(--timing) var(--duration),
+              transform var(--duration) var(--timing);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;            
+  }
 
 .form-field .form-input {
   margin: 0;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 8px;
+  padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;  
@@ -1263,13 +1285,24 @@ textarea {
 
 .form-field .form-input:focus,
 .form-field .coment:focus{
-  outline: 0;
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  outline-color: var(--accent-color);
+  /* outline: 0; */ 
+  /* color: var(--accent-color);   */
+}
+.form-input:focus-within .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+  transform: translate(-25px, -40px);
+  /* color: var(--accent-color); */
+    
 }
 
 .form-field:focus-within .form-label {
-  color: var(--accent-color) ;
+  transform: translate(-25px, -40px);
+  color: var(--accent-color); 
+}
+
+.form-field:focus-within .icon {
+  fill: var(--accent-color);
 }
 
 .form-field .coment {
@@ -1305,8 +1338,7 @@ textarea {
   border: 0;
   border: 1px solid var(--accent-color);
   transition: background-color var(--duration) var(--timing),
-              color var(--duration) var(--timing);
-  
+              color var(--duration) var(--timing);  
 }
 
 .submit:hover,
@@ -1322,3 +1354,18 @@ textarea {
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
+
+.icon-form .icon {
+  position: absolute;
+
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  fill: var(--title-text-color);
+
+  transition: fill var(--duration) var(--timing);
+}
+
+

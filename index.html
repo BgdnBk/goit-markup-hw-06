@@ -67,38 +67,60 @@
       <div  data-modal class="backdrop is-hidden" >
         <div class="modal" >
           <b class="modal-name">Оставьте свои данные, мы вам перезвоним</b>
+            <a class="modal-close" data-modal-close href="" aria-label="закрыть модальное окно">
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-Close"></use>
+              </svg>
+            </a>
           <form class="form">
-            <div class="form-field">
-              <label for="name" class="form-label">Имя</label>
-              <input type="text" id="name" name="name" required class="form-input"> 
-            </div>
+            <label class="form-field">
+              <input type="text" id="name" name="name" required class="form-input" placeholder=" "> 
+              <span class="form-label">Имя</span> 
+              <span class="icon-form">
+                <svg class="icon">
+                  <use href="./images/sprite.svg#icon-name"></use>
+                </svg>
+            </span>             
+            </label>
 
-            <div class="form-field">
-              <label for="phone" class="form-label">Телефон</label>
-              <input type="tel" id="phone" name="phone" required class="form-input">
-            </div>
+            <label class="form-field">
+              <input type="tel" id="phone" name="phone" required class="form-input" placeholder=" ">
+              <span for="phone" class="form-label">Телефон</span>  
+              <span class="icon-form">
+                <svg class="icon">
+                  <use href="./images/sprite.svg#icon-Telefon"></use>
+                </svg>
+            </span>
+            </span>                
+            </label>
 
-            <div class="form-field">
-              <label for="email" class="form-label">Почта</label>
-              <input type="email" id="email" name="email" autocomplete="on" required class="form-input">
-            </div>
+            <label class="form-field">
+              <input type="email" id="email" name="email" autocomplete="on" required class="form-input" placeholder=" ">
+              <span class="form-label">Почта</span> 
+              <span class="icon-form">
+                <svg class="icon">
+                  <use href="./images/sprite.svg#icon-mail-form"></use>
+                </svg>
+              </span>             
+            </label>
             
-            <div class="form-field">
-              <label for="coment" class="form-coment">Комментарий</label>
-              <textarea class="coment" name="coment" id="coment" cols="30" rows="10" placeholder=""></textarea>
-            </div>
+            <label class="form-field">
+              <span for="coment" class="form-label">Комментарий</span>
+              <textarea class="coment" name="coment" id="coment" cols="30" rows="10" placeholder=" "></textarea>
+            </label>
 
-            <div class="form-field">
+            <label class="form-field">
               <input type="checkbox" id="accept" name="accept">
-              <label for="accept">
+              <span for="accept">
                 Соглашаюсь с рассылкой и принимаю 
                 <a href="">Условия договора</a>
-              </label>
-            </div>
+              </span>
+            </label>
 
             <button type="submit" class="submit">
-              <span class="send">Оптравить</span>
+              <span class="send">Отправить</span>
             </button>
+            
           </form>
         </div>
       </div>
