@@ -474,18 +474,19 @@
       <!-- footer подписка -->
       <div class="section-news">
         <b class="cosial-subscribe">Подпишитесь на рассылку</b>   
-        <form  class="list-news">          
+        <div class="form-wraper">
+          <form  class="list-news">          
             <label class="form-field-footer">
               <input type="text" id="name" name="name" class="email" placeholder="E-mail "> 
-              <!-- <span class="form-label-footer">E-mail</span>  -->
-              <a href="" class="link icon-plane">        
-                Подписаться
-                <svg class="icon-news">
-                  <use href="./images/sprite.svg#icon-iconsend"></use>
-                </svg>        
-              </a>      
+              <!-- <span class="form-label-footer">E-mail</span>  -->                   
             </label> 
         </form>
+        <button class="link icon-plane">        
+          Подписаться
+          <svg class="icon-news">
+            <use href="./images/sprite.svg#icon-iconsend"></use>
+          </svg>        
+        </button> 
         <!-- <ul class="list-news">
           <li>
             <input type="text" value="E-mail" class="email">
@@ -499,6 +500,7 @@
             </a>            
           </li>
         </ul>         -->
+        </div>        
       </div> 
    </div>
        <!-- border-footer  --> 
