@@ -898,7 +898,7 @@ ul {
 .icon-plane:hover .icon-news,
 .icon-plane:focus .icon-news  {
   /* background-color: var(--primary-text-color); */
-  background-color:var(--primary-text-color);
+  /* background-color:var(--primary-text-color); */
   /* color: var(--accent-color); */
   fill: var(--accent-color);
   outline: none;
