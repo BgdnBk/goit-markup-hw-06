@@ -104,10 +104,10 @@
               </span>             
             </label>
             
-            <label class="form-field">
-              <span for="coment" class="form-coment">Комментарий</span>
-              <textarea class="coment" name="coment" id="coment" cols="30" rows="10" placeholder=" "></textarea>
-            </label>
+            <div class="form-field">              
+              <textarea class="coment" name="coment" cols="30" rows="10" placeholder=" "></textarea>
+              <label class="form-coment">Комментарий</label>
+            </div>
 
             <div class="form-field">
               <label class="form-checkbox">
@@ -474,7 +474,19 @@
       <!-- footer подписка -->
       <div class="section-news">
         <b class="cosial-subscribe">Подпишитесь на рассылку</b>   
-        <ul class="list-news">
+        <form  class="list-news">          
+            <label class="form-field-footer">
+              <input type="text" id="name" name="name" class="email" placeholder="E-mail "> 
+              <!-- <span class="form-label-footer">E-mail</span>  -->
+              <a href="" class="link icon-plane">        
+                Подписаться
+                <svg class="icon-news">
+                  <use href="./images/sprite.svg#icon-iconsend"></use>
+                </svg>        
+              </a>      
+            </label> 
+        </form>
+        <!-- <ul class="list-news">
           <li>
             <input type="text" value="E-mail" class="email">
           </li>
@@ -486,7 +498,7 @@
               </svg>        
             </a>            
           </li>
-        </ul>        
+        </ul>         -->
       </div> 
    </div>
        <!-- border-footer  --> 
