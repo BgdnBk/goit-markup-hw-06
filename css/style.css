@@ -629,9 +629,11 @@ ul {
   height: 50px;  
 }
 
-.list-client .client-logo:hover  {
+.list-client .client-logo:hover,
+.list-client .client-logo:focus  {
   fill: var(--accent-color);
   border-color:  var(--accent-color); 
+  outline: none;
 }
 
 .yaco {
@@ -857,7 +859,7 @@ ul {
   
 }
 
-.list-news .link {
+/* .list-news .link {
   display: inline-flex;
   padding: 10px 29px;
   background-color: var(--accent-color);
@@ -866,7 +868,7 @@ ul {
   border-radius: 4px;
 
   transition: background-color var(--duration) var(--timing);
-}
+} */
 
 .form-wraper {
   display: inline-flex;
@@ -879,7 +881,7 @@ ul {
   height: 25px;
   justify-content: center;
 
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
   fill: var(--primary-text-color);
 
   transition:background-color var(--duration) var(--timing)
