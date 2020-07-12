@@ -1269,6 +1269,7 @@ color: var(--text-color);
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 4;
+  transition: opacity var(--timing) var(--duration);
 }
 
 .backdrop.is-hidden {
@@ -1280,7 +1281,7 @@ color: var(--text-color);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1) ;
 
   min-width: 528px;
   min-height: 581px;
@@ -1295,8 +1296,8 @@ color: var(--text-color);
               0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;  
 
-  transform: translate(-50%, -50%) scale(1);
   transition: transform var(--timing) var(--duration);
+  
 }
 
 
